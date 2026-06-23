@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        👑 Lavender Palace
+    </div>
+
+    <ul>
+        <li><a href="index.html">Back</a></li>
+    </ul>
+
+</nav>
+
+<section class="dashboard">
+
+    <h1>
+        Admin Dashboard
+    </h1>
+
+    <div class="recent-card">
+
+        <h2>
+            Recent Rentals
+        </h2>
+    
+        <table>
+    
+            <thead>
+    
+                <tr>
+    
+                    <th>ID</th>
+                    <th>Customer</th>
+                    <th>Dress</th>
+                    <th>Status</th>
+    
+                </tr>
+    
+            </thead>
+    
+            <tbody id="recentRentalBody">
+    
+            </tbody>
+    
+        </table>
+    
+    </div>
+    
+        <h2>
+            Rental Analytics
+        </h2>
+    
+        <canvas id="rentalChart">
+    
+        </canvas>
+    
+    </div>
+    
+        <div class="stat-card">
+
+            <h2 id="dressCount">
+                0
+            </h2>
+
+            <p>
+                Total Dresses
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="customerCount">
+                0
+            </h2>
+
+            <p>
+                Customers
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="activeRental">
+                0
+            </h2>
+
+            <p>
+                Active Rentals
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="returnedRental">
+                0
+            </h2>
+
+            <p>
+                Returned Rentals
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="revenue">
+                Rp 0
+            </h2>
+        
+            <p>
+                Total Revenue
+            </p>
+        
+        </div>
+
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
